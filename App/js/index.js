@@ -46,6 +46,23 @@ xui.Class('App', 'xui.Module',{
                                 "right":"111"
                             }
                         ]
+                    },
+                    {
+                        "desc":"Action 2",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            undefined,
+                            "Error"
+                        ],
+                        "method":"message",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_input46.getValue()}",
+                                "symbol":"!=",
+                                "right":"111"
+                            }
+                        ]
                     }
                 ])
             );
