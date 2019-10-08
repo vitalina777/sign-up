@@ -24,8 +24,8 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button5")
                 .setDirtyMark(false)
-                .setLeft("13.333333333333334em")
-                .setTop("14.166666666666666em")
+                .setLeft("20.833333333333332em")
+                .setTop("10.833333333333334em")
                 .setCaption("Sign Up")
                 .onClick([
                     {
