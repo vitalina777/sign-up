@@ -44,6 +44,11 @@ xui.Class('App', 'xui.Module',{
                                 "left":"{page.xui_ui_input46.getValue()}",
                                 "symbol":"=",
                                 "right":"111"
+                            },
+                            {
+                                "left":"{page.xui_ui_input68}",
+                                "symbol":"=",
+                                "right":"aaa"
                             }
                         ]
                     },
@@ -61,6 +66,11 @@ xui.Class('App', 'xui.Module',{
                                 "left":"{page.xui_ui_input46.getValue()}",
                                 "symbol":"!=",
                                 "right":"111"
+                            },
+                            {
+                                "left":"{page.xui_ui_input68}",
+                                "symbol":"!=",
+                                "right":"aaa"
                             }
                         ]
                     }
