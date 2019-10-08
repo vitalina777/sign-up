@@ -34,7 +34,7 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "{page.xui_ui_label50.getName()}",
+                            "{page.xui_ui_input68.getValue()}",
                             undefined,
                             5000
                         ],
@@ -64,19 +64,13 @@ xui.Class('App', 'xui.Module',{
             
             append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input61")
+                .setHost(host,"xui_ui_input68")
                 .setDirtyMark(false)
-                .setLeft("15.833333333333334em")
+                .setLeft("7.5em")
                 .setTop("5em")
-            );
-            
-            append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label50")
-                .setLeft("10.833333333333334em")
-                .setTop("5em")
-                .setWidth("4.083333333333333em")
-                .setCaption("Name")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Name")
             );
             
             return children;
