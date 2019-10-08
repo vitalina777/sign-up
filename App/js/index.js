@@ -66,7 +66,7 @@ xui.Class('App', 'xui.Module',{
                             {
                                 "left":"{page.xui_ui_label8.getName()}",
                                 "symbol":"=",
-                                "right":"12345"
+                                "right":"{12345}"
                             }
                         ]
                     }
