@@ -74,7 +74,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"message",
                         "conditions":[
                             {
-                                "left":"{page.xui_ui_label8}",
+                                "left":"{page.xui_ui_label8.getName()}",
                                 "symbol":"=",
                                 "right":"12345"
                             }
