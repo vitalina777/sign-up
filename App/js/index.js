@@ -59,7 +59,7 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "",
+                            "vfhjfgjf",
                             undefined,
                             5000
                         ],
