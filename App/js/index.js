@@ -59,16 +59,11 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "l,l,l,l,"
+                            "{page.xui_ui_label8.getName()}",
+                            undefined,
+                            5000
                         ],
-                        "method":"message",
-                        "conditions":[
-                            {
-                                "left":"{page.xui_ui_label8.getName()}",
-                                "symbol":"=",
-                                "right":"{\"12345\"}"
-                            }
-                        ]
+                        "method":"message"
                     }
                 ])
             );
