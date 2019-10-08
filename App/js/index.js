@@ -59,11 +59,18 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "{page.xui_ui_label8.getName()}",
+                            "ok",
                             undefined,
                             5000
                         ],
-                        "method":"message"
+                        "method":"message",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_input46.getValue()}",
+                                "symbol":"=",
+                                "right":"{111}"
+                            }
+                        ]
                     }
                 ])
             );
@@ -74,6 +81,19 @@ xui.Class('App', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("15em")
                 .setTop("8.333333333333334em")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input46")
+                .setDirtyMark(false)
+                .setLeft("35.833333333333336em")
+                .setTop("6.666666666666667em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Password Input")
+                .setType("password")
+                .setValue("pwd")
             );
             
             return children;
