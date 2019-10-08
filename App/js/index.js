@@ -42,17 +42,7 @@ xui.Class('App', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("15em")
                 .setTop("5em")
-                .setMask("u-11-ll-aa(**)")
-            );
-            
-            append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input6")
-                .setDirtyMark(false)
-                .setLeft("6.666666666666667em")
-                .setTop("8.333333333333334em")
-                .setWidth("18em")
-                .setLabelSize("8em")
+                .setMask("380-(11)-111-11-11")
             );
             
             append(
@@ -77,6 +67,14 @@ xui.Class('App', 'xui.Module',{
                         "onKO":3
                     }
                 ])
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input27")
+                .setDirtyMark(false)
+                .setLeft("15em")
+                .setTop("8.333333333333334em")
             );
             
             return children;
