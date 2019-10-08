@@ -34,7 +34,7 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "{page.xui_ui_input68.getValue()}",
+                            "Hello, {page.xui_ui_input68.getValue()}",
                             undefined,
                             5000
                         ],
