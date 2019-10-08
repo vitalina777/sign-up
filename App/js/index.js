@@ -60,6 +60,27 @@ xui.Class('App', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("15em")
                 .setTop("8.333333333333334em")
+                .onChange([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            undefined,
+                            "Hello",
+                            200,
+                            5000
+                        ],
+                        "method":"message",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_label8}",
+                                "symbol":"=",
+                                "right":"12345"
+                            }
+                        ]
+                    }
+                ])
             );
             
             return children;
@@ -70,7 +91,8 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
-        }
+        },
+        functions:{ }
         /*,
         // To determine how properties affects this module
         propSetAction : function(prop){
