@@ -112,16 +112,6 @@ xui.Class('App', 'xui.Module',{
                 .setLabelCaption("Name")
             );
             
-            append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input81")
-                .setDirtyMark(false)
-                .setLeft("15.833333333333334em")
-                .setTop("10em")
-                .setWidth("19.166666666666668em")
-                .setMask("uuuuuuuuuuuuuuuuuuu@aaaaaa.aaa")
-            );
-            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
