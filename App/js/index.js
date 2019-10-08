@@ -52,6 +52,25 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("13.333333333333334em")
                 .setTop("11.666666666666666em")
                 .setCaption("Sign Up")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            undefined,
+                            "l,l,l,l,"
+                        ],
+                        "method":"message",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_label8.getName()}",
+                                "symbol":"defined",
+                                "right":""
+                            }
+                        ]
+                    }
+                ])
             );
             
             append(
@@ -60,27 +79,6 @@ xui.Class('App', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("15em")
                 .setTop("8.333333333333334em")
-                .onChange([
-                    {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"msg",
-                        "args":[
-                            undefined,
-                            "Hello",
-                            200,
-                            5000
-                        ],
-                        "method":"message",
-                        "conditions":[
-                            {
-                                "left":"{page.xui_ui_label8.getName()}",
-                                "symbol":"=",
-                                "right":"12345"
-                            }
-                        ]
-                    }
-                ])
             );
             
             return children;
