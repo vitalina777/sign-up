@@ -59,18 +59,11 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "ok",
+                            "{page.xui_ui_input46.getValue()}",
                             undefined,
                             5000
                         ],
-                        "method":"message",
-                        "conditions":[
-                            {
-                                "left":"{page.xui_ui_input46.getValue()}",
-                                "symbol":"=",
-                                "right":"{111}"
-                            }
-                        ]
+                        "method":"message"
                     }
                 ])
             );
@@ -93,7 +86,6 @@ xui.Class('App', 'xui.Module',{
                 .setLabelSize("8em")
                 .setLabelCaption("Password Input")
                 .setType("password")
-                .setValue("pwd")
             );
             
             return children;
