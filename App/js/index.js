@@ -25,7 +25,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_button5")
                 .setDirtyMark(false)
                 .setLeft("13.333333333333334em")
-                .setTop("11.666666666666666em")
+                .setTop("14.166666666666666em")
                 .setCaption("Sign Up")
                 .onClick([
                     {
@@ -110,6 +110,16 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Name")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input81")
+                .setDirtyMark(false)
+                .setLeft("15.833333333333334em")
+                .setTop("10em")
+                .setWidth("19.166666666666668em")
+                .setMask("uuuuuuuuuuuuuuuuuuu@aaaaaa.aaa")
             );
             
             return children;
