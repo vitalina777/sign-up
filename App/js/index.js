@@ -21,23 +21,6 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label7")
-                .setLeft("9.166666666666666em")
-                .setTop("5em")
-                .setCaption("Number")
-            );
-            
-            append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input5")
-                .setDirtyMark(false)
-                .setLeft("15em")
-                .setTop("5em")
-                .setMask("380-(11)-111-11-11")
-            );
-            
-            append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button5")
                 .setDirtyMark(false)
@@ -51,7 +34,7 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "vfhjfgjf",
+                            "{page.xui_ui_label50.getName()}",
                             undefined,
                             5000
                         ],
@@ -77,6 +60,23 @@ xui.Class('App', 'xui.Module',{
                 .setLabelSize("8em")
                 .setLabelCaption("Password Input")
                 .setType("password")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input61")
+                .setDirtyMark(false)
+                .setLeft("15.833333333333334em")
+                .setTop("5em")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label50")
+                .setLeft("10.833333333333334em")
+                .setTop("5em")
+                .setWidth("4.083333333333333em")
+                .setCaption("Name")
             );
             
             return children;
