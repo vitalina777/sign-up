@@ -58,7 +58,7 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "Error"
+                            "Error password"
                         ],
                         "method":"message",
                         "conditions":[
@@ -66,7 +66,19 @@ xui.Class('App', 'xui.Module',{
                                 "left":"{page.xui_ui_input46.getValue()}",
                                 "symbol":"!=",
                                 "right":"111"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "desc":"Action 3",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            undefined,
+                            "Error name"
+                        ],
+                        "method":"message",
+                        "conditions":[
                             {
                                 "left":"{page.xui_ui_input68.getValue()}",
                                 "symbol":"!=",
