@@ -34,7 +34,7 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "{page.xui_ui_label50.getName()}",
+                            "{page.xui_ui_label50.getValue()}",
                             undefined,
                             5000
                         ],
