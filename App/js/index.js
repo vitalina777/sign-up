@@ -52,21 +52,6 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("13.333333333333334em")
                 .setTop("11.666666666666666em")
                 .setCaption("Sign Up")
-                .onClick([
-                    {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"msg",
-                        "args":[
-                            "Hello"
-                        ],
-                        "method":"confirm",
-                        "okFlag":"_confirm_yes",
-                        "koFlag":"_confirm_no",
-                        "onOK":2,
-                        "onKO":3
-                    }
-                ])
             );
             
             append(
