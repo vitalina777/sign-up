@@ -29,14 +29,6 @@ xui.Class('App', 'xui.Module',{
             );
             
             append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label8")
-                .setLeft("9.166666666666666em")
-                .setTop("9.166666666666666em")
-                .setCaption("Password")
-            );
-            
-            append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input5")
                 .setDirtyMark(false)
@@ -77,18 +69,10 @@ xui.Class('App', 'xui.Module',{
             
             append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input27")
-                .setDirtyMark(false)
-                .setLeft("15em")
-                .setTop("8.333333333333334em")
-            );
-            
-            append(
-                xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input46")
                 .setDirtyMark(false)
-                .setLeft("35.833333333333336em")
-                .setTop("6.666666666666667em")
+                .setLeft("7.5em")
+                .setTop("7.5em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Password Input")
