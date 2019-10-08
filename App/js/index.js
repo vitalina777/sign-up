@@ -59,11 +59,18 @@ xui.Class('App', 'xui.Module',{
                         "target":"msg",
                         "args":[
                             undefined,
-                            "{page.xui_ui_input46.getValue()}",
+                            "",
                             undefined,
                             5000
                         ],
-                        "method":"message"
+                        "method":"message",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_input46.getValue()}",
+                                "symbol":"=",
+                                "right":"111"
+                            }
+                        ]
                     }
                 ])
             );
