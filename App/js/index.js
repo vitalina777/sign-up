@@ -49,10 +49,34 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input6")
                 .setDirtyMark(false)
-                .setLeft("7.5em")
+                .setLeft("6.666666666666667em")
                 .setTop("8.333333333333334em")
                 .setWidth("18em")
                 .setLabelSize("8em")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button5")
+                .setDirtyMark(false)
+                .setLeft("13.333333333333334em")
+                .setTop("11.666666666666666em")
+                .setCaption("Sign Up")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "Hello"
+                        ],
+                        "method":"confirm",
+                        "okFlag":"_confirm_yes",
+                        "koFlag":"_confirm_no",
+                        "onOK":2,
+                        "onKO":3
+                    }
+                ])
             );
             
             return children;
